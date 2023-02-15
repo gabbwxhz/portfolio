@@ -1,0 +1,228 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+}
+
+
+button {
+    border: 1px solid #6200ff;
+    border-radius: 4px;
+    color: #6200ff;
+    background-color: transparent;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1b0046;
+    box-shadow: 0.3px 0.3px 10px #6200ff;
+}
+
+ul {
+    color: #7B7B7B;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0 0 0;
+
+}
+
+.header-text {
+    color: #6200ff;
+    font-size: 25px;
+}
+
+.header-title {
+    color: aliceblue;
+    font-size: 80px;
+}
+
+.header-subtitle {
+    color: #7B7B7B;
+    font-size: 25px;
+    max-width: 540px;
+    text-align: justify;
+}
+
+.purple {
+    color: #6200ff;
+}
+
+.aliceblue{
+    color: aliceblue;
+}
+
+.spacing {
+    margin-top: 140px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-subtitle {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.about-text {
+    color: #7B7B7B;
+    font-size: 18px;
+    max-width: 540px;
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.me-image {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.stack-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stack-subtitle {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.frontend,
+.backend {
+    margin-top: 60px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project-subtitle {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.project-card {
+    margin-top: 60px;
+    background-color: #111111;
+    width: 350px;
+    height: 400px;
+    padding: 45px;
+    text-align: center;
+
+
+}
+
+.card-text-title {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-text {
+    padding: 25px;
+    color: aliceblue;
+    margin: 30px 0;
+}
+
+.card-button {
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.contact-text {
+    font-size: 20px;
+    color: #7B7B7B;
+    max-width: 650px;
+    margin: 40px 0;
+}
+
+.contact-title {
+    color: aliceblue;
+    font-size: 40px;
+
+}
+
+.contact-email, .contact-whatsapp{
+    color: aliceblue;
+    margin-top: 5px;    
+}
+
+.bold{
+    font-weight: bold;
+}
+
+footer{
+    margin: 60px 0 10px 0;
+    text-align: center;
+    color: #7B7B7B;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: calc(100% - 40px);
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .stack-container,
+    .project-container {
+        flex-direction: column;
+
+    }
+
+    ul {
+        text-align: justify;
+    }
+
+
+}
