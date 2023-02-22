@@ -30,9 +30,9 @@ button:hover {
 
 ul {
     color: #7B7B7B;
-    margin-left: 40px;
     margin-top: 10px;
     font-size: 25px;
+    list-style-type: none;
 }
 
 .container {
@@ -199,8 +199,6 @@ footer{
         width: calc(100% - 40px);
 
     }
-
-
 }
 
 @media (max-width: 820px) {
@@ -214,31 +212,33 @@ footer{
         gap: 60px;
     }
 
-  
     .project-container {
         flex-direction: column;
 
-    }
-
-    ul {
-        text-align: justify;
-        
     }
 
     .about-subtitle, .project-subtitle, .stack-subtitle{
         text-align: center;
     }
 
-
 }
 
 @media (max-width: 500px){
+   .container{
+    text-align: center;
+
+   }
+
     .stack-container{
         flex-direction: column;
         text-align: center;
+        
     }
 
+    
     ul{
-        max-width: 10px;
+       text-align: center;
+        
     }
+
 }
