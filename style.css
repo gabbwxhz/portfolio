@@ -13,19 +13,61 @@ body {
 
 
 button {
-    border: 1px solid #6200ff;
-    border-radius: 4px;
-    color: #6200ff;
+    position: relative;
     background-color: transparent;
-    padding: 10px 50px;
-    cursor: pointer;
-    transition: all 0.25s ease-in;
+    border: none;
+    padding: 8px 25px;
+    color: #6200ff;
+    font-size: 20px;
+    letter-spacing: 2px;
     font-weight: bold;
+    transition: 0.4s background 0.4s;
+    box-shadow: 0.4, color 0.4s;
+    transition-delay: 0s;
+    cursor: pointer;
+
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #6200ff;
+    border-left: 2px solid #6200ff;
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #6200ff;
+    border-right: 2px solid #6200ff;
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+
+}
+
+button:hover::after,
+button:hover::before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
 }
 
 button:hover {
-    background-color: #1b0046;
-    box-shadow: 0.3px 0.3px 10px #6200ff;
+    background-color: #6200ff;
+    color: aliceblue;
+    box-shadow: 0 0 20px #6200ff;
+    transition-delay: 0.4s;
 }
 
 ul {
@@ -69,7 +111,7 @@ ul {
     color: #6200ff;
 }
 
-.aliceblue{
+.aliceblue {
     color: aliceblue;
 }
 
@@ -162,7 +204,7 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
 
 }
 
@@ -179,16 +221,17 @@ ul {
 
 }
 
-.contact-email, .contact-whatsapp{
+.contact-email,
+.contact-whatsapp {
     color: aliceblue;
-    margin-top: 5px;    
+    margin-top: 5px;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-footer{
+footer {
     margin: 60px 0 10px 0;
     text-align: center;
     color: #7B7B7B;
@@ -202,6 +245,11 @@ footer{
 }
 
 @media (max-width: 820px) {
+    button {
+        padding: 8px 50px;
+
+    }
+
     .header-container {
         flex-direction: column;
         gap: 60px;
@@ -217,28 +265,52 @@ footer{
 
     }
 
-    .about-subtitle, .project-subtitle, .stack-subtitle{
+    .about-subtitle,
+    .project-subtitle,
+    .stack-subtitle {
         text-align: center;
+    }
+
+    .project-card {
+        width: 450px;
+        height: 400px;
     }
 
 }
 
-@media (max-width: 500px){
-   .container{
-    text-align: center;
+@media (max-width: 500px) {
+    button {
+        padding: 8px 25px;
 
-   }
+    }
 
-    .stack-container{
+    ul {
+        text-align: center;
+
+    }
+
+    .container {
+        text-align: center;
+
+    }
+
+    .stack-container {
         flex-direction: column;
         text-align: center;
-        
+
     }
 
-    
-    ul{
-       text-align: center;
-        
+    .project-card {
+        width: 350px;
+        height: 400px;
     }
 
+
+
+}
+
+@media (max-width: 280px) {
+    .header-title{
+        font-size: 73px;
+    }
 }
