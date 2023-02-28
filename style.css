@@ -227,6 +227,16 @@ ul {
     margin-top: 5px;
 }
 
+.contact-flex{
+    display: flex;
+}
+
+.contact-email::after,
+.contact-whatsapp::after{
+    content: "";
+    margin-right: 10px;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -309,8 +319,13 @@ footer {
 
 }
 
-@media (max-width: 280px) {
+@media (max-width: 320px) {
     .header-title{
         font-size: 73px;
     }
+
+    .contact-flex{
+        flex-direction: column;
+    }
+    
 }
